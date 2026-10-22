@@ -303,6 +303,12 @@
     position: absolute; left: 8px; top: 8px; padding: 3px 8px; font-size: 11px;
     background: rgba(7,7,11,.88); border-color: color-mix(in srgb, var(--c) 60%, transparent);
   }
+  /* wider layout + fix clipped descenders in gradient name */
+  .wrap { max-width: 1180px; }
+  .hero { grid-template-columns: 240px 1fr; gap: 56px; }
+  .bio { max-width: 860px; font-size: 16.5px; line-height: 1.75; }
+  h1 { font-family: var(--sans); font-weight: 700; letter-spacing: -0.03em; font-size: clamp(42px, 7vw, 74px); line-height: 1.12; padding-bottom: .12em; margin-bottom: 4px; }
+  .contact-big { line-height: 1.3; padding-bottom: .1em; }
   .btn.is-disabled { cursor: not-allowed; opacity: .55; filter: saturate(.6); }
   .btn.is-disabled:hover { box-shadow: none; }
   .journal { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 2px; }
